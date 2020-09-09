@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    margin: 0 150px;
+}
+
+.field {
+    padding: 50px 0;
+    border: 1px dashed #7c80a9;
+    width: 50%;
+    height: 400px;
+}
+
+.form {
+    display: flex;
+    max-width: 270px;
+    margin: 0 auto;
+    padding: 10px;
+    flex-direction: column;
+    border: 3px solid #e9742a;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.form__header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form__arrow {
+    font-size: 25px;
+    order: 1;
+}
+
+.arrow__icon {
+    cursor: pointer;
+}
+
+.clipboard__icon {
+    font-size: 48px;
+}
+
+.form__title {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    flex-grow: 2;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    height: 35px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.form__input::placeholder {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 2px;
+}
+
+.form__button {
+    height: 40px;
+    background: #ffa900;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hide {
+    display: none;
+}
+
+.form__arrow .clipboard__icon {
+    display: none;
+}
+
+.drag-state .clipboard__icon {
+    display: block;
+}
+
+.drag-state .arrow__icon {
+    display: none;
+}
+
+.hovered {
+    background-color: #d1d8e2;
+}
